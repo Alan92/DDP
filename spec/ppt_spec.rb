@@ -16,7 +16,9 @@ it "Deberia de haber una lista de las posibles tiradas" do
 @ppt_obj.tiradas.should == [:piedra, :papel, :tijeras]
 end
 
-
+it "Deberia de haber una lista con las jugadas posibles y quien gana" do
+@ppt_obj.derrotas.should == {:piedra => :tijeras, :tijeras => :papel, :papel => :piedra}
+end
 
 
 
