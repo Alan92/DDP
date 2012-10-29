@@ -28,7 +28,9 @@ it "Debe existir un resultado para un juego, desde el punto de vista de la maqui
 @ppt_obj.resultado.should == :pierde
 end
 
-
+it "Se debe invocar al metodo obtener_humano() para recoger la tirada del humano y que esta sea valida" do
+@ppt_obj.obtener_humano('piedra').should == :piedra
+end
 
 end
 

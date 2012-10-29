@@ -8,4 +8,10 @@ def initialize
 @resultados = [:gana, :pierde, :empata]
 @resultado = :pierde
 end
+
+def obtener_humano(cadena)
+@humano = cadena.to_sym
+
+end
+
 end
