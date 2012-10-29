@@ -5,11 +5,11 @@ before :each do
 end
 
 it "Deberia de haber una tirada del humano" do
-@ppt_obj.humano.should == 0
+@ppt_obj.humano.should == :piedra
 end
 
 it "Deberia de haber una tirada de la maquina" do
-@ppt_obj.maquina.should == 0
+@ppt_obj.maquina.should == :papel
 end
 
 it "Deberia de haber una lista de las posibles tiradas" do
