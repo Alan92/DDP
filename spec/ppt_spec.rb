@@ -47,6 +47,12 @@ score.push@ppt_obj.obtener_maquina
 end
 score.uniq.length.should == @ppt_obj.tiradas.length
 end
-
+it "Se debe comprobar que las tiradas de la maquina y del humano no son siempre la misma" do
+score=[]
+30.times do
+score.push@ppt_obj.jugar
+end
+score.uniq.length.should == @ppt_obj.resultados.length
+end
 end
 
