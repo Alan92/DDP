@@ -24,7 +24,9 @@ it "Deberia de haber una lista de resultados de un juego desde el punto de vista
 @ppt_obj.resultados.should == [:gana, :pierde, :empata]
 end
 
-
+it "Debe existir un resultado para un juego, desde el punto de vista de la maquina" do
+@ppt_obj.resultado.should == :pierde
+end
 
 
 
