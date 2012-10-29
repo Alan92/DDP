@@ -18,4 +18,16 @@ def obtener_maquina
 @maquina = @tiradas.sample
 end
 
+def jugar
+
+obtener_maquina
+
+    if @humano == @maquina
+      @resultado = @resultados[2]
+    elsif @humano == @derrotas[@maquina]
+      @resultado = @resultados[0]
+    else
+      @resultado = @resultados[1]
+   end
+end
 end

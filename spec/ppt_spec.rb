@@ -36,6 +36,9 @@ it "Se debe invocar al metodo obtener_maquina() para recoger la tirada de la maq
 @ppt_obj.obtener_maquina.should == @ppt_obj.maquina
 end
 
+it "Se debe invocar al metodo jugar() para determinar el ganador de la tirada" do
+@ppt_obj.jugar.should == @ppt_obj.resultado
+end
 
 end
 
