@@ -32,5 +32,10 @@ it "Se debe invocar al metodo obtener_humano() para recoger la tirada del humano
 @ppt_obj.obtener_humano('piedra').should == :piedra
 end
 
+it "Se debe invocar al metodo obtener_maquina() para recoger la tirada de la maquina y que esta sea valida" do
+@ppt_obj.obtener_maquina.should == @ppt_obj.maquina
+end
+
+
 end
 

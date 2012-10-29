@@ -14,4 +14,8 @@ def obtener_humano(cadena)
 
 end
 
+def obtener_maquina
+@maquina = @tiradas.sample
+end
+
 end
