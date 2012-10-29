@@ -40,5 +40,13 @@ it "Se debe invocar al metodo jugar() para determinar el ganador de la tirada" d
 @ppt_obj.jugar.should == @ppt_obj.resultado
 end
 
+it "Se debe de comprobar que las tiradas de la maquina al ser aleatorias recorren las tres posibilidades" do
+score=[]
+30.times do
+score.push@ppt_obj.obtener_maquina
+end
+score.uniq.length.should == @ppt_obj.tiradas.length
+end
+
 end
 
