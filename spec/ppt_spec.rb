@@ -12,7 +12,9 @@ it "Deberia de haber una tirada de la maquina" do
 @ppt_obj.maquina.should == 0
 end
 
-
+it "Deberia de haber una lista de las posibles tiradas" do
+@ppt_obj.tiradas.should == [:piedra, :papel, :tijeras]
+end
 
 
 
