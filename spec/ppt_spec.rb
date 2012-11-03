@@ -33,11 +33,11 @@ it "Se debe invocar al metodo obtener_humano() para recoger la tirada del humano
 end
 
 it "Se debe invocar al metodo obtener_maquina() para recoger la tirada de la maquina y que esta sea valida" do
-@ppt_obj.obtener_maquina.should == @ppt_obj.maquina
+@ppt_obj.tiradas.include?(@ppt_obj.obtener_maquina)
 end
 
 it "Se debe invocar al metodo jugar() para determinar el ganador de la tirada" do
-@ppt_obj.jugar.should == @ppt_obj.resultado
+@ppt_obj.resultados.include?(@ppt_obj.jugar)
 end
 
 it "Se debe de comprobar que las tiradas de la maquina al ser aleatorias recorren las tres posibilidades" do
